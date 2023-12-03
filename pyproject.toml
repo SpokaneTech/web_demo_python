@@ -29,9 +29,10 @@ requires-python = ">=3.8"
 
 [project.optional-dependencies]
 dev = [
+    "coveralls",
     "bandit",
     "black",
-    "coveralls",
+    "faker",
     "isort",
     "model-bakery",
     "mypy",
