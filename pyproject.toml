@@ -22,7 +22,7 @@ description = "django project created from djangoaddicts django_project_template
 dynamic = ["version"]
 keywords = ["django"]
 license = {file = "LICENSE"}
-name = "my_django_project"
+name = "web_demo_python"
 readme = "README.md"
 requires-python = ">=3.8"
 
@@ -46,6 +46,7 @@ dev = [
     "types-python-dateutil",
     "typing_extensions",
 ]
+
 
 [tool.bandit]
 exclude_dirs = ["venv", "django_project/tests"]
@@ -102,3 +103,10 @@ filterwarnings = [
 [tool.ruff]
 line-length = 120
 exclude = ["django_project/manage.py", "django_project/tests", "django_project/*/migrations", "django_project/*/scripts", "django_project/*/local_test"]
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["django_project"]
+exclude = []
+namespaces = false
