@@ -1,6 +1,8 @@
 # SpokaneTech web app
 
-<br/>
+![](static/demo.png)
+
+</br>
 
 ## Local Development
 ### prerequisites
