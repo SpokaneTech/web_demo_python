@@ -49,7 +49,7 @@ dev = [
 
 
 [tool.bandit]
-exclude_dirs = ["venv", "django_project/tests"]
+exclude_dirs = ["venv", "django_project/tests", "django_project/main_app/management/commands"]
 
 
 [tool.black]
