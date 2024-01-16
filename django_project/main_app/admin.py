@@ -16,7 +16,7 @@ from main_app.models import (
 
 
 class EventAdmin(admin.ModelAdmin):
-    list_display = [
+    list_display: list = [
         "id",
         "created_at",
         "updated_at",
@@ -27,8 +27,8 @@ class EventAdmin(admin.ModelAdmin):
         "location",
         "group",
     ]
-    search_fields = ["id", "name", "description", "duration", "location"]
-    list_filter = ["group"]
+    search_fields: list = ["id", "name", "description", "duration", "location"]
+    list_filter: list = ["group"]
 
 
 class EventPlatformAdmin(admin.ModelAdmin):
@@ -38,51 +38,51 @@ class EventPlatformAdmin(admin.ModelAdmin):
 
 
 class MemberAdmin(admin.ModelAdmin):
-    list_display = ["id", "created_at", "updated_at", "first_name", "last_name", "email", "zip_code"]
-    search_fields = ["id", "first_name", "last_name", "email", "zip_code"]
-    list_filter = []
+    list_display: list = ["id", "created_at", "updated_at", "first_name", "last_name", "email", "zip_code"]
+    search_fields: list = ["id", "first_name", "last_name", "email", "zip_code"]
+    list_filter: list = []
 
 
 class MemberInterestAdmin(admin.ModelAdmin):
-    list_display = ["id", "member", "interest", "interest_level"]
-    search_fields = ["id", "interest_level"]
-    list_filter = ["member", "interest"]
+    list_display: list = ["id", "member", "interest", "interest_level"]
+    search_fields: list = ["id", "interest_level"]
+    list_filter: list = ["member", "interest"]
 
 
 class MemberLinkAdmin(admin.ModelAdmin):
-    list_display = ["id", "member", "name", "description", "url", "is_public"]
-    search_fields = ["id", "name", "description", "url"]
-    list_filter = ["member", "is_public"]
+    list_display: list = ["id", "member", "name", "description", "url", "is_public"]
+    search_fields: list = ["id", "name", "description", "url"]
+    list_filter: list = ["member", "is_public"]
 
 
 class MemberSkillAdmin(admin.ModelAdmin):
-    list_display = ["id", "member", "skill", "level", "yoe"]
-    search_fields = ["id", "yoe"]
-    list_filter = ["member", "skill", "level"]
+    list_display: list = ["id", "member", "skill", "level", "yoe"]
+    search_fields: list = ["id", "yoe"]
+    list_filter: list = ["member", "skill", "level"]
 
 
 class SkillLevelAdmin(admin.ModelAdmin):
-    list_display = ["id", "created_at", "updated_at", "name", "description", "enabled"]
-    search_fields = ["id", "name", "description"]
-    list_filter = ["enabled"]
+    list_display: list = ["id", "created_at", "updated_at", "name", "description", "enabled"]
+    search_fields: list = ["id", "name", "description"]
+    list_filter: list = ["enabled"]
 
 
 class TechnicalAreaAdmin(admin.ModelAdmin):
-    list_display = ["id", "created_at", "updated_at", "name", "description"]
-    search_fields = ["id", "name", "description"]
-    list_filter = []
+    list_display: list = ["id", "created_at", "updated_at", "name", "description"]
+    search_fields: list = ["id", "name", "description"]
+    list_filter: list = []
 
 
 class TechGroupAdmin(admin.ModelAdmin):
-    list_display = ["id", "created_at", "updated_at", "name", "description", "enabled", "platform", "url"]
-    search_fields = ["id", "name", "description", "url"]
-    list_filter = ["enabled", "platform"]
+    list_display: list = ["id", "created_at", "updated_at", "name", "description", "enabled", "platform", "url"]
+    search_fields: list = ["id", "name", "description", "url"]
+    list_filter: list = ["enabled", "platform"]
 
 
 class TechGroupLinkAdmin(admin.ModelAdmin):
-    list_display = ["id", "group", "name", "description", "url"]
-    search_fields = ["id", "name", "description", "url"]
-    list_filter = ["group"]
+    list_display: list = ["id", "group", "name", "description", "url"]
+    search_fields: list = ["id", "name", "description", "url"]
+    list_filter: list = ["group"]
 
 
 # register models

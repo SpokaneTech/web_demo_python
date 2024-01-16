@@ -10,9 +10,9 @@ from handyhelpers.views import HandyHelperIndexView
 class Index(HandyHelperIndexView):
     """render the main_app index page"""
 
-    title = """Main_App"""
-    subtitle = "Select an option below"
-    item_list = [
+    title: str = """Main_App"""
+    subtitle: str = "Select an option below"
+    item_list: list = [
         {
             "url": "/main_app/dashboard",
             "icon": "fas fa-tachometer-alt",
@@ -26,8 +26,8 @@ class Index(HandyHelperIndexView):
             "description": "List RESTful APIs for Main_App",
         },
     ]
-    protected_item_list = []
-    protected_group_name = "admin"
+    protected_item_list: list = []
+    protected_group_name: str = "admin"
 
 
 # class ListMyModels(HandyHelperListPlusCreateAndFilterView):

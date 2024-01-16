@@ -29,7 +29,7 @@ class Main_AppDashboard(View):
 class Main_AppAnnualProgressView(AnnualProgressView):
     """ """
 
-    dataset_list = [
+    dataset_list: list = [
         # dict(
         #     title="Model",
         #     queryset=Model.objects.all(),
@@ -43,7 +43,7 @@ class Main_AppAnnualProgressView(AnnualProgressView):
 class Main_AppAnnualStatView(AnnualStatView):
     """ """
 
-    dataset_list = [
+    dataset_list: list = [
         # dict(
         #     title="Model",
         #     queryset=Model.objects.all(),
@@ -57,7 +57,7 @@ class Main_AppAnnualStatView(AnnualStatView):
 class Main_AppAnnualTrendView(AnnualTrendView):
     """ """
 
-    dataset_list = [
+    dataset_list: list = [
         # dict(
         #     title="Model",
         #     queryset=Model.objects.all(),

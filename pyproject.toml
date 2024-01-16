@@ -77,7 +77,7 @@ profile = "black"
 
 
 [tool.mypy]
-exclude = ['venv/*']
+exclude = ["venv/*", "^django_project/main_app/migrations/*"]
 ignore_missing_imports = true
 
 
