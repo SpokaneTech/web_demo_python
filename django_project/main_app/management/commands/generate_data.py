@@ -3,10 +3,20 @@ import random
 
 from django.core.management.base import BaseCommand, CommandParser
 from faker import Faker
+
 # import models
-from main_app.models import (Event, EventPlatform, Member, MemberInterest,
-                             MemberLink, MemberSkill, SkillLevel, TechGroup,
-                             TechGroupLink, TechnicalArea)
+from main_app.models import (
+    Event,
+    EventPlatform,
+    Member,
+    MemberInterest,
+    MemberLink,
+    MemberSkill,
+    SkillLevel,
+    TechGroup,
+    TechGroupLink,
+    TechnicalArea,
+)
 
 __version__ = "0.0.1"
 

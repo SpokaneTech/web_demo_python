@@ -1,8 +1,17 @@
 from django import forms
+
 # import models
-from main_app.models import (Event, EventPlatform, Member, MemberInterest,
-                             MemberSkill, SkillLevel, TechGroup, TechGroupLink,
-                             TechnicalArea)
+from main_app.models import (
+    Event,
+    EventPlatform,
+    Member,
+    MemberInterest,
+    MemberSkill,
+    SkillLevel,
+    TechGroup,
+    TechGroupLink,
+    TechnicalArea,
+)
 
 base_choices = [(None, "--------")]
 

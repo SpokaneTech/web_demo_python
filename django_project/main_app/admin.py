@@ -1,8 +1,18 @@
 from django.contrib import admin
+
 # import models
-from main_app.models import (Event, EventPlatform, Member, MemberInterest,
-                             MemberLink, MemberSkill, SkillLevel, TechGroup,
-                             TechGroupLink, TechnicalArea)
+from main_app.models import (
+    Event,
+    EventPlatform,
+    Member,
+    MemberInterest,
+    MemberLink,
+    MemberSkill,
+    SkillLevel,
+    TechGroup,
+    TechGroupLink,
+    TechnicalArea,
+)
 
 
 class EventAdmin(admin.ModelAdmin):

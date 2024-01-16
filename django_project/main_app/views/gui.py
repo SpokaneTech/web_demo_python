@@ -1,4 +1,4 @@
-from handyhelpers.views import (HandyHelperIndexView)
+from handyhelpers.views import HandyHelperIndexView
 
 # import models
 # from main_app.models import ()

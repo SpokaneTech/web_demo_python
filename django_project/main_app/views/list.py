@@ -1,19 +1,32 @@
 from djangoaddicts.pygwalker.views import PygWalkerListView
+
 # import forms
-from main_app.forms.filter_forms import (EventFilterForm,
-                                         EventPlatformFilterForm,
-                                         MemberFilterForm,
-                                         MemberInterestFilterForm,
-                                         MemberLinkFilterForm,
-                                         MemberSkillFilterForm,
-                                         SkillLevelFilterForm,
-                                         TechGroupFilterForm,
-                                         TechGroupLinkFilterForm,
-                                         TechnicalAreaFilterForm)
+from main_app.forms.filter_forms import (
+    EventFilterForm,
+    EventPlatformFilterForm,
+    MemberFilterForm,
+    MemberInterestFilterForm,
+    MemberLinkFilterForm,
+    MemberSkillFilterForm,
+    SkillLevelFilterForm,
+    TechGroupFilterForm,
+    TechGroupLinkFilterForm,
+    TechnicalAreaFilterForm,
+)
+
 # import models
-from main_app.models import (Event, EventPlatform, Member, MemberInterest,
-                             MemberLink, MemberSkill, SkillLevel, TechGroup,
-                             TechGroupLink, TechnicalArea)
+from main_app.models import (
+    Event,
+    EventPlatform,
+    Member,
+    MemberInterest,
+    MemberLink,
+    MemberSkill,
+    SkillLevel,
+    TechGroup,
+    TechGroupLink,
+    TechnicalArea,
+)
 
 
 class ListEvents(PygWalkerListView):
