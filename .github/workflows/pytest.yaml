@@ -8,6 +8,6 @@ jobs:
       - uses: davidslusser/actions_python_pytest@v1.0.0
         with:
           src: ""
-          options: "--cov=src"
+          options: "--cov=django_project"
           pip_install_command: "pip install -e .[dev]"
           python_version: "3.11"

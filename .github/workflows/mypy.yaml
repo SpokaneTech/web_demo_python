@@ -10,3 +10,4 @@ jobs:
           src: "django_project"
           options: "-v"
           pip_install_command: "pip install -e .[dev]"
+          python_version: "3.11"
