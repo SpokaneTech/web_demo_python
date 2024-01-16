@@ -72,32 +72,13 @@ omit = [
     ]
 
 
-[tool.flake8]
-ignore = "E203,E266,H106,H904,E133"
-max-line-length = 120
-max-complexity = 25
-hang-closing = true
-exclude = "django_project/manage.py, django_project/*/scripts"
+[tool.isort]
+profile = "black"
 
 
-[tool.pylint.format]
-max-line-length = "120"
-
-[tool.pylint.MASTER]
-ignore-paths = ["django_project/manage.py", "django_project/tests", "django_project/storemgr/migrations", "django_project/*/scripts", "django_project/*/local_test"]
-exit-zero = true
-
-[tool.pylint.'MESSAGES CONTROL']
-disable = "R0903,R0913,R0901,W0613,W0718,C0114,C0115,C0103,R1725"
-
-
-[tool.pytest.ini_options]
-addopts = "-s -v -x --strict-markers -m 'not extra' --cov=django_project"
-testpaths = ["django_project"]
-filterwarnings = [
-    "ignore::DeprecationWarning",
-    "ignore::UserWarning",
-]
+[tool.mypy]
+exclude = ['venv/*']
+ignore_missing_imports = true
 
 
 [tool.ruff]
