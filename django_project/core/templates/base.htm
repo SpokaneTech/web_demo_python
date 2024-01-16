@@ -88,6 +88,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         {% if user.is_authenticated %}
+                        {% include 'main_app/navigation/data.htm' %}
                         {% include 'core/navigation/rest_api.htm' %}
                         {% endif %}
                     </ul>
@@ -128,7 +129,7 @@
                     {% endif %}
                 </div>
             </div>
-          </nav>
+        </nav>
         {% endblock mainnavbar %}
 
         <section id='page-container' class="container-fluid flex-grow-1">

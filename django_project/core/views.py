@@ -16,7 +16,7 @@ class RegisterUser(CreateView):
 class Index(HandyHelperIndexView):
     """render the project index page"""
 
-    title = """Welcome to <span class="text-primary">spokane_tech</span><span class="text-secondary"></span>!"""
+    title = """Welcome to <span class="text-primary">Spokane</span><span class="text-secondary">Tech</span>!"""
     subtitle = "Select an option below to get started"
     item_list = [
         {

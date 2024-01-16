@@ -1,0 +1,30 @@
+<table class="table table-condensed table-bordered table-striped" data-toggle="table" data-search="true"
+       data-flat="true" data-pagination="true" data-show-pagination-switch="true" data-show-columns="true"
+       data-show-export="true" data-reorderable-columns="true" data-resizable="false" data-export-types="['excel','csv','txt','sql']">
+    <thead>
+        <tr>
+            <th data-field="created_at" data-sortable="true">Created At</th>
+            <th data-field="email" data-sortable="true">Email</th>
+            <th data-field="first_name" data-sortable="true">First Name</th>
+            <th data-field="id" data-sortable="true">Id</th>
+            <th data-field="last_name" data-sortable="true">Last Name</th>
+            <th data-field="updated_at" data-sortable="true">Updated At</th>
+            <th data-field="zip_code" data-sortable="true">Zip Code</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in queryset %}
+        <tr>
+            <td>{{ row.created_at }}</td>
+            <td>{{ row.email }}</td>
+            <td>{{ row.first_name }}</td>
+            <td>{{ row.id }}</td>
+            <td>{{ row.last_name }}</td>
+            <td>{{ row.updated_at }}</td>
+            <td>{{ row.zip_code }}</td>
+            <td></td>
+    </tr>
+        {% endfor %}
+    </tbody>
+</table>

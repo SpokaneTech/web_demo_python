@@ -3,7 +3,8 @@
 # from django.conf import settings
 from django.shortcuts import render
 from django.views.generic import View
-from handyhelpers.views.report import AnnualTrendView, AnnualStatView, AnnualProgressView
+from handyhelpers.views.report import (AnnualProgressView, AnnualStatView,
+                                       AnnualTrendView)
 
 # from handyhelpers.views.report import get_colors
 

@@ -1,0 +1,24 @@
+<table class="table table-condensed table-bordered table-striped" data-toggle="table" data-search="true"
+       data-flat="true" data-pagination="true" data-show-pagination-switch="true" data-show-columns="true"
+       data-show-export="true" data-reorderable-columns="true" data-resizable="false" data-export-types="['excel','csv','txt','sql']">
+    <thead>
+        <tr>
+            <th data-field="id" data-sortable="true">Id</th>
+            <th data-field="interest" data-sortable="true">Interest</th>
+            <th data-field="interest_level" data-sortable="true">Interest Level</th>
+            <th data-field="member" data-sortable="true">Member</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in queryset %}
+        <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.interest }}</td>
+            <td>{{ row.interest_level }}</td>
+            <td>{{ row.member }}</td>
+            <td></td>
+    </tr>
+        {% endfor %}
+    </tbody>
+</table>

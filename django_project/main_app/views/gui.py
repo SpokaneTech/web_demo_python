@@ -1,8 +1,4 @@
-from django.shortcuts import render
-from django.views.generic import DetailView, View
-
-from handyhelpers.permissions import InAnyGroup
-from handyhelpers.views import HandyHelperIndexView, HandyHelperListPlusCreateAndFilterView
+from handyhelpers.views import (HandyHelperIndexView)
 
 # import models
 # from main_app.models import ()

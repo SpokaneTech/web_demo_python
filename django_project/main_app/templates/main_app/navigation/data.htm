@@ -1,9 +1,13 @@
-
 <li class="nav-item dropdown mx-3">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Data
     </a>
     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        
+        <li><a class="dropdown-item" href="{% url 'main_app:list_events' %}">Events</a></li>
+        <li><a class="dropdown-item" href="{% url 'main_app:list_eventplatforms' %}">EventPlatforms</a></li>
+        <li><a class="dropdown-item" href="{% url 'main_app:list_members' %}">Members</a></li>
+        <li><a class="dropdown-item" href="{% url 'main_app:list_skilllevels' %}">SkillLevels</a></li>
+        <li><a class="dropdown-item" href="{% url 'main_app:list_techgroups' %}">TechGroups</a></li>
+        <li><a class="dropdown-item" href="{% url 'main_app:list_technicalareas' %}">TechnicalAreas</a></li>
     </ul>
 </li>

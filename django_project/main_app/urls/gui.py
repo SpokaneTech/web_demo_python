@@ -1,7 +1,5 @@
 from django.urls import path
-from main_app.views import gui
-from main_app.views import report
-
+from main_app.views import gui, report
 
 urlpatterns = [
     # GUI views
