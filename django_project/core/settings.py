@@ -55,7 +55,6 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "django_extensions",
     "django_filters",
-    "djangoaddicts.codegen",
     "djangoaddicts.hostutils",
     "djangoaddicts.pygwalker",
     "djangoaddicts.signalcontrol",
